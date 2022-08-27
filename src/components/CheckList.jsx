@@ -57,14 +57,14 @@ const CheckList = ({
                   item?.items.map((checkListItems) => {
                     return (
                       <>
-                        <ul className="flex flex-col shadow-lg gap-10 border-4  p-5 border-slate-400 my-3">
+                        <ul className="flex flex-col border-4  border-slate-400 gap-3 3">
                           <li className="text-xl"> list item </li>
                           <li> checklist item name : {checkListItems.name} </li>
                           <li> checklist item id : {checkListItems.id} </li>
                           <li>
                             {' '}
                             checklist item status :{' '}
-                            {String(checkListItems.itemCompletionStatus)}{' '}
+                            {checkListItems.itemCompletionStatus? "Completed" : "Uncompleted"}{' '}
                           </li>
                           <form
                             onSubmit={(e) => {

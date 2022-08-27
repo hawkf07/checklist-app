@@ -15,11 +15,9 @@ const Login = ({ token, setToken }) => {
       console.log(e);
     }
   });
-  console.log(token, 'is token');
   useEffect(() => {
     if (mutation.isSuccess) setToken(mutation.data.data.data.token);
     return () => {
-      console.log('unmounted');
     };
   }, [mutation]);
 

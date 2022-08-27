@@ -2,7 +2,6 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import { Register } from './components/Register';
 import { ListCheckList } from './components/getCheckList';
-import { GetCheckListByIdComponent } from './components/getCheckListById';
 import { Login } from './components/Login';
 
 import { QueryClientProvider, QueryClient, useQuery } from 'react-query';
@@ -19,7 +18,6 @@ function App() {
         <Register token={token} setToken={setToken} />
         <Login token={token} setToken={setToken} />
         <ListCheckList token={token} />
-        <GetCheckListByIdComponent token={token} />
       </div>
     </QueryClientProvider>
   );

@@ -130,21 +130,7 @@ const ListCheckList = ({ token }) => {
   return (
     <>
       <div className="p-5">
-        <h1> List Check List </h1>
-        <CheckList
-          updateCheckListStatus={updateCheckListStatus}
-          renameItemByCheckListId={renameItemByCheckListId}
-          createNewCheckListByItem={createNewCheckListByItem}
-          renameItemValue={renameItemValue}
-          renameInputHandler={renameInputHandler}
-          getCheckList={getCheckList}
-          inputHandler={inputHandler}
-          renameItemByCheckListId={renameItemByCheckListId}
-          setRenameItemValue={setRenameItemValue}
-      nameValue={nameValue}
-          deleteChecklistItemById={deleteChecklistItemById}
-        />
-        <form
+<form
           className="flex flex-col"
           onClick={(e) => {
             e.preventDefault();
@@ -168,6 +154,21 @@ const ListCheckList = ({ token }) => {
             create
           </button>
         </form>
+        <h1> List Check List </h1>
+        <CheckList
+          updateCheckListStatus={updateCheckListStatus}
+          renameItemByCheckListId={renameItemByCheckListId}
+          createNewCheckListByItem={createNewCheckListByItem}
+          renameItemValue={renameItemValue}
+          renameInputHandler={renameInputHandler}
+          getCheckList={getCheckList}
+          inputHandler={inputHandler}
+          renameItemByCheckListId={renameItemByCheckListId}
+          setRenameItemValue={setRenameItemValue}
+      nameValue={nameValue}
+          deleteChecklistItemById={deleteChecklistItemById}
+        />
+        
       </div>
     </>
   );
